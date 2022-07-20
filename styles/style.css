@@ -94,6 +94,10 @@ input {
     background-color: rgb(206, 47, 47);
 }
 
+.match {
+    text-decoration: none;
+}
+
 /* Courses styles */
 
 .icon-one {
@@ -142,6 +146,56 @@ input {
     margin-top: 0px;
 }
 
+/* style for Match Layout  */
+.container-two {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    margin: 75px;
+}
+
+#box-right {
+    flex-grow: 1;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 16px;
+    padding: 25px;
+    padding-top: 0px;
+
+}
+
+.match-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px black;
+    justify-content: space-evenly
+}
+
+.Vs {
+    margin: 20px;
+}
+
+.flag-tittle-for-match {
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 0px;
+}
+
+.single-match {
+    border: 2px solid rgb(65 60 60 / 11%);
+    box-shadow: 0px px grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
 /* Footer styles  */
 footer {
     background-color: black;
@@ -162,9 +216,11 @@ hr {
     width: 1320px;
     margin-bottom: 45px;
 }
+
 footer nav {
     display: flex;
 }
+
 .footer-menu {
     text-decoration: none;
     color: aliceblue;
@@ -172,6 +228,14 @@ footer nav {
     margin: 1rem;
 }
 
-/* ----------------------
-          Finished 
- ------------------------- */
+/* Responsive css started  */
+/* Media Quaries */
+/* Mobile devise */
+@media only screen and (max-width:688px) {
+    .total-top {
+
+        margin: 0px;
+        padding: 0px;
+
+    }
+}
